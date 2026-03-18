@@ -11,19 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css"/>
 </head>
-<!-- POPUP -->
-<div id="popup" class="popup">
-  <div class="popup-content">
-    <span id="close">&times;</span>
-    <h2>Join our newsletter</h2>
-    <p>Get 5-minute insights about AI & innovation</p>
 
-    <form action="https://formspree.io/f/mojkylje" method="POST">
-      <input type="email" name="email" placeholder="Your email" required>
-      <button type="submit">Subscribe</button>
-    </form>
-  </div>
-</div>
 <body>
 
 <a class="skip-link" href="#content">Skip to content</a>
@@ -154,6 +142,19 @@
     <p class="muted">Built for clarity.</p>
   </div>
 </footer>
+<!-- POPUP -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span id="close">&times;</span>
+    <h2>Join our newsletter</h2>
+    <p>Get 5-minute insights about AI & innovation</p>
+
+    <form action="https://formspree.io/f/mojkylje" method="POST">
+      <input type="email" name="email" placeholder="Your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</div>
 <script>
   const popup = document.getElementById("popup");
   const close = document.getElementById("close");
@@ -167,114 +168,5 @@
     popup.style.display = "none";
   };
 </script>
-</body>
-</html> <main id="content">
-  <section class="hero">
-    <div class="container hero-inner">
-      <p class="pill">New: 5-minute explainers</p>
-      <h1>Understand innovation in 5 minutes.</h1>
-      <p class="lede">We explain AI, green energy, biotech, and space in clear, human language—no jargon required.</p>
-      <div class="hero-actions">
-        <a class="button primary" href="#latest">Read the latest</a>
-        <a class="button ghost" href="#categories">Browse categories</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="categories" class="section">
-    <div class="container">
-      <div class="section-head">
-        <h2>Categories</h2>
-        <p class="muted">Pick a topic and dive in.</p>
-      </div>
-      <div class="grid cards">
-        <a class="card category" href="#" aria-label="AI & Robots category">
-          <h3>AI & Robots</h3>
-          <p class="muted">How machines learn, reason, and assist.</p>
-        </a>
-        <a class="card category" href="#" aria-label="Green Energy category">
-          <h3>Green Energy</h3>
-          <p class="muted">Batteries, solar, wind, and the grid.</p>
-        </a>
-        <a class="card category" href="#" aria-label="Biotechnology category">
-          <h3>Biotechnology</h3>
-          <p class="muted">From CRISPR to new medicines.</p>
-        </a>
-        <a class="card category" href="#" aria-label="Space & Physics category">
-          <h3>Space & Physics</h3>
-          <p class="muted">Rockets, planets, and big ideas.</p>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section id="latest" class="section">
-    <div class="container">
-      <div class="section-head">
-        <h2>Latest articles</h2>
-        <p class="muted">Short reads. High signal.</p>
-      </div>
-
-      <div class="grid cards">
-        <article class="card post">
-          <div class="post-meta">
-            <span class="tag">AI</span>
-            <span class="muted">· 5 min</span>
-          </div>
-          <h3>How AI Is Changing Healthcare</h3>
-          <p>Simple innovations that are transforming medicine.</p>
-          <a class="post-link" href="article-ai.html">Read more →</a>
-        </article>
-
-        <article class="card post">
-          <div class="post-meta">
-            <span class="tag">Energy</span>
-            <span class="muted">· 6 min</span>
-          </div>
-          <h3>Future of green energy</h3>
-          <p>Clean energy is scaling fast: cheaper storage, smarter grids, and better manufacturing.</p>
-          <a class="post-link" href="article-ai.html" aria-label="Read Future of green energy">Read →</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-<section id="about">
-  <div class="container section about">
-    <div class="section-head">
-      <h2>About</h2>
-      <p class="muted">A calm place to learn what’s next.</p>
-    </div>
-    <div class="prose">
-      <p>
-        InnNatural is a blog that explains innovation in simple language.
-        We believe technology should be understandable for everyone.
-      </p>
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="container section">
-    <div class="section-head">
-      <h2>Suggest a topic</h2>
-      <p class="muted">Tell us what you want explained next.</p>
-    </div>
-
-    <form class="suggest" action="#" method="get">
-      <label class="sr-only" for="topic">Your idea</label>
-      <input id="topic" name="topic" type="text" placeholder="Your idea…" autocomplete="off" />
-      <button class="button primary" type="submit">Send</button>
-    </form>
-  </div>
-</section>
-
-<footer>
-  <div class="container footer-inner">
-    <p class="muted">© 2026 InnNatural</p>
-    <p class="muted">Built for clarity.</p>
-  </div>
-</footer>
-
 </body>
 </html> 

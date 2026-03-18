@@ -500,3 +500,10 @@ footer {
   margin-bottom: 15px;
   color: #ccc;
 }
+.article-image {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 16px;
+  margin: 20px auto;
+  display: block;
+}

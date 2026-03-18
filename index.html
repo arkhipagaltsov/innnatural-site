@@ -158,15 +158,40 @@
 <script>
   const popup = document.getElementById("popup");
   const close = document.getElementById("close");
+  const noThanks = document.getElementById("noThanks");
+  const form = popup.querySelector("form");
 
-  // показать через 3 секунды
-  setTimeout(() => {
-    popup.style.display = "flex";
-  }, 3000);
+  // проверка — показывать или нет
+  if (!localStorage.getItem("popupClosed")) {
+    setTimeout(() => {
+      popup.style.display = "flex";
+    }, 3000);
+  }
 
+  // крестик
   close.onclick = () => {
     popup.style.display = "none";
+    localStorage.setItem("popupClosed", "true");
   };
+
+  // кнопка "no thanks"
+  noThanks.onclick = () => {
+    popup.style.display = "none";
+    localStorage.setItem("popupClosed", "true");
+  };
+
+  // клик вне окна
+  popup.onclick = (e) => {
+    if (e.target === popup) {
+      popup.style.display = "none";
+      localStorage.setItem("popupClosed", "true");
+    }
+  };
+
+  // если отправил форму (ввел почту)
+  form.addEventListener("submit", () => {
+    localStorage.setItem("popupClosed", "true");
+  });
 </script>
 </body>
 </html> 

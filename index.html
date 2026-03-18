@@ -152,6 +152,7 @@
     <form action="https://formspree.io/f/mojkylje" method="POST">
       <input type="email" name="email" placeholder="Your email" required>
       <button type="submit">Subscribe</button>
+      <button id="noThanks" type="button">No thanks</button>
     </form>
   </div>
 </div>
@@ -189,9 +190,10 @@
   };
 
   // если отправил форму (ввел почту)
-  form.addEventListener("submit", () => {
-    localStorage.setItem("popupClosed", "true");
-  });
+  form.addEventListener("submit", (e) => {
+  localStorage.setItem("popupClosed", "true");
+  popup.style.display = "none";
+});
 </script>
 </body>
 </html> 

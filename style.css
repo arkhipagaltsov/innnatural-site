@@ -578,3 +578,10 @@ footer {
   font-size: 1.1rem;
   color: white;
 }
+.about-video {
+  width: 100%;
+  max-width: 720px;
+  border-radius: 16px;
+  margin-top: 20px;
+  box-shadow: var(--shadow-md);
+}
